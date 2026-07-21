@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tactus &mdash; Automated Touchscreen Test Platform</title>
+<meta name="description" content="Tactus is a precision robotic platform that taps, swipes, and drags real touchscreen devices exactly like a human finger. Automate UI testing on iPads, iPhones, and tablets.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_32.png">
+<link rel="apple-touch-icon" href="assets/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo_mark.png" alt="" class="brand-mark">
+      <span class="brand-name">TACTUS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#how">How it works</a>
+      <a href="#software">Software</a>
+      <a href="#specs">Specs</a>
+      <a href="#manual">Manual</a>
+      <a href="#download" class="nav-cta">Download</a>
+    </nav>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">Automated Touchscreen Test Platform</div>
+      <h1>The robot that touches<br><span class="grad">like a human.</span></h1>
+      <p class="hero-sub">Tactus is a precision CoreXY machine that taps, swipes, drags, and holds on real touchscreen devices &mdash; driven from a Mac app where you simply draw the gestures on a live video. Real hardware. Real touches. Repeatable every time.</p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">Download for Mac</a>
+        <a href="#how" class="btn btn-ghost">See how it works</a>
+      </div>
+      <div class="hero-badges">
+        <span>&#10003; iPad, iPhone &amp; tablets</span>
+        <span>&#10003; 4K overhead vision</span>
+        <span>&#10003; Sub-millimeter accuracy</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="assets/hero_machine.jpg" alt="The Tactus machine, top view" />
+      <div class="hero-media-glow"></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span></span></div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="strip">
+  <div class="strip-item"><b>6</b><span>Human-like gestures</span></div>
+  <div class="strip-item"><b>4K</b><span>Overhead camera vision</span></div>
+  <div class="strip-item"><b>241&times;154</b><span>mm work area</span></div>
+  <div class="strip-item"><b>&lt;1mm</b><span>Placement accuracy</span></div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="section intro">
+  <div class="intro-copy">
+    <div class="section-tag">What is Tactus?</div>
+    <h2>Physical UI testing,<br>without the human.</h2>
+    <p>Software emulators can't catch what happens on real glass &mdash; capacitive quirks, momentum scrolling, touch rejection, timing. Tactus tests the <em>actual device</em>. A moving stylus reproduces genuine finger input while a 4K camera watches the screen, so you see exactly what the machine sees and place gestures with confidence.</p>
+    <p>You draw a sequence on the live feed, press Play, and Tactus performs it on the hardware &mdash; the same way, every time. Perfect for regression testing, endurance runs, demos, and any workflow that needs a real finger on a real screen.</p>
+  </div>
+  <div class="intro-media">
+    <img src="assets/machine_iso.jpg" alt="Tactus machine, angled view">
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="section cap" id="capabilities">
+  <div class="section-head center">
+    <div class="section-tag">Capabilities</div>
+    <h2>Everything a fingertip can do</h2>
+    <p class="section-lead">Six true-to-life gestures, tuned to register perfectly on capacitive screens.</p>
+  </div>
+  <div class="cap-grid">
+    <div class="cap-card"><div class="cap-ico">&#9737;</div><h3>Tap</h3><p>A crisp single touch for buttons, icons, and links &mdash; tuned contact time so it never reads as a long-press.</p></div>
+    <div class="cap-card"><div class="cap-ico">&#9739;</div><h3>Double&nbsp;Tap</h3><p>Two rapid taps in the same spot, with an adjustable gap that matches native double-tap timing.</p></div>
+    <div class="cap-card"><div class="cap-ico">&#9673;</div><h3>Tap &amp; Hold</h3><p>A precise long-press for context menus and drag-handles, held for exactly as long as you set.</p></div>
+    <div class="cap-card"><div class="cap-ico">&#10230;</div><h3>Swipe</h3><p>A true flick that leaves the surface still moving &mdash; producing real momentum and inertial scrolling.</p></div>
+    <div class="cap-card"><div class="cap-ico">&#8646;</div><h3>Drag / Scroll</h3><p>A controlled, deliberate drag that stops before lifting &mdash; content follows the finger and halts, no momentum.</p></div>
+    <div class="cap-card"><div class="cap-ico">&#8862;</div><h3>Move</h3><p>Reposition above the glass without touching &mdash; for choreographing complex multi-step sequences.</p></div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section how" id="how">
+  <div class="section-head center">
+    <div class="section-tag">How it works</div>
+    <h2>Draw it. Play it. Done.</h2>
+    <p class="section-lead">No scripting required. If you can draw on a photo, you can automate a device.</p>
+  </div>
+  <div class="how-steps">
+    <div class="how-step">
+      <div class="how-num">1</div>
+      <div class="how-body"><h3>Mount the device</h3><p>Clamp your iPad, iPhone, or tablet flat in the centered tray and set its thickness in one field.</p></div>
+    </div>
+    <div class="how-step">
+      <div class="how-num">2</div>
+      <div class="how-body"><h3>Draw your gestures</h3><p>On the live 4K video, click to place taps or drag to draw swipes. Each becomes a numbered step.</p></div>
+    </div>
+    <div class="how-step">
+      <div class="how-num">3</div>
+      <div class="how-body"><h3>Press Play</h3><p>Tactus performs the sequence on the real hardware &mdash; precisely and repeatably, as many times as you like.</p></div>
+    </div>
+  </div>
+  <div class="how-media">
+    <img src="assets/annot_create.jpg" alt="Tactus Create &amp; Play interface with a gesture sequence">
+    <p class="fignote">The Create &amp; Play workspace &mdash; draw gestures directly on the live device video.</p>
+  </div>
+</section>
+
+<!-- ============ SOFTWARE ============ -->
+<section class="section software" id="software">
+  <div class="section-head center">
+    <div class="section-tag">The Software</div>
+    <h2>Powerful when you need it,<br>simple when you don't</h2>
+    <p class="section-lead">A clean gesture-first workspace up front, with deep controls a click away.</p>
+  </div>
+  <div class="sw-showcase">
+    <div class="sw-feature">
+      <div class="sw-text">
+        <h3>Fine-tune every feel</h3>
+        <p>Dial in tap contact time, swipe and drag speeds, press depth, hover height, and precise contact trims &mdash; then Apply &amp; Save. Tune the machine to any device or app behavior.</p>
+      </div>
+      <img src="assets/annot_advanced.jpg" alt="Advanced settings tab">
+    </div>
+    <div class="sw-feature reverse">
+      <div class="sw-text">
+        <h3>Vision that stays true</h3>
+        <p>A dual-plane, height-compensated calibration maps the 4K camera to the machine so taps land exactly where you place them &mdash; at any device thickness.</p>
+      </div>
+      <img src="assets/annot_calibrate.jpg" alt="Calibration tab">
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery">
+  <div class="section-head center">
+    <div class="section-tag">The Machine</div>
+    <h2>Engineered to be precise</h2>
+  </div>
+  <div class="gal-grid">
+    <figure class="gal-item wide"><img src="assets/machine_iso.jpg" alt="Tactus isometric view"><figcaption>Custom CoreXY gantry</figcaption></figure>
+    <figure class="gal-item"><img src="assets/machine_side.jpg" alt="Tactus side profile"><figcaption>Low-profile frame</figcaption></figure>
+    <figure class="gal-item"><img src="assets/machine_board.jpg" alt="Tactus electronics"><figcaption>ZNP Robin Nano control</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ SPECS ============ -->
+<section class="section specs" id="specs">
+  <div class="section-head center">
+    <div class="section-tag">Specifications</div>
+    <h2>Under the hood</h2>
+  </div>
+  <div class="spec-cols">
+    <div class="spec-block">
+      <h4>Mechanical</h4>
+      <dl>
+        <div><dt>Motion</dt><dd>Custom CoreXY gantry</dd></div>
+        <div><dt>Outer size</dt><dd>18.25 &times; 16 &times; 8 in</dd></div>
+        <div><dt>Work area</dt><dd>241 &times; 154 mm</dd></div>
+        <div><dt>Stylus stroke</dt><dd>11 mm spiral cam</dd></div>
+        <div><dt>Motors</dt><dd>NEMA 17 steppers</dd></div>
+      </dl>
+    </div>
+    <div class="spec-block">
+      <h4>Vision &amp; Control</h4>
+      <dl>
+        <div><dt>Camera</dt><dd>IMX415 4K USB, 30 FPS</dd></div>
+        <div><dt>Lens</dt><dd>M12 adjustable, wide-angle</dd></div>
+        <div><dt>Mainboard</dt><dd>ZNP Robin Nano V1.3</dd></div>
+        <div><dt>Firmware</dt><dd>Marlin (custom)</dd></div>
+        <div><dt>Calibration</dt><dd>Dual-plane, height-comp.</dd></div>
+      </dl>
+    </div>
+    <div class="spec-block">
+      <h4>Software</h4>
+      <dl>
+        <div><dt>Host</dt><dd>macOS</dd></div>
+        <div><dt>Interface</dt><dd>Gesture-first GUI</dd></div>
+        <div><dt>Connection</dt><dd>USB serial, 115200</dd></div>
+        <div><dt>Gestures</dt><dd>Tap, hold, swipe, drag</dd></div>
+        <div><dt>Devices</dt><dd>iPad, iPhone, tablets</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD / INSTALL ============ -->
+<section class="section download" id="download">
+  <div class="section-head center">
+    <div class="section-tag light">Get Started</div>
+    <h2>Download &amp; Install</h2>
+    <p class="section-lead">Two quick steps to get Tactus running on your Mac.</p>
+  </div>
+
+  <div class="dl-cards">
+    <!-- App -->
+    <div class="dl-card featured">
+      <div class="dl-step">Step 1</div>
+      <h3>Install the Tactus app</h3>
+      <p class="dl-ver">Latest version <span class="ver-pill" id="appVersion">v2.15</span></p>
+      <p>Download the installer, open it, and drag Tactus into your Applications folder. That's it.</p>
+      <!-- TODO: replace href with your hosted .dmg URL -->
+      <a href="#" class="btn btn-primary btn-block" id="dmgLink" data-todo="Replace href with your Tactus .dmg download URL">
+        &#8681;&nbsp; Download Tactus (.dmg)
+      </a>
+      <p class="dl-fine">macOS 11 (Big Sur) or later &middot; Apple Silicon &amp; Intel</p>
+      <details class="dl-note">
+        <summary>First launch on macOS</summary>
+        <p>Because Tactus is from an independent developer, the first time you open it macOS may show a security prompt. Right-click (or Control-click) the Tactus app &rarr; <b>Open</b> &rarr; <b>Open</b>. You only do this once.</p>
+      </details>
+    </div>
+
+    <!-- Driver -->
+    <div class="dl-card">
+      <div class="dl-step">Step 2</div>
+      <h3>Install the USB serial driver</h3>
+      <p class="dl-ver">Required &middot; one time per Mac</p>
+      <p>The machine's mainboard uses a <b>CH340</b> USB-to-serial chip. macOS doesn't include this driver, so install the free, official one from WCH (the chip maker). Universal binary &mdash; works on Apple Silicon and Intel.</p>
+      <a href="https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html" target="_blank" rel="noopener" class="btn btn-dark btn-block">
+        &#8681;&nbsp; Official CH34x Mac Driver
+      </a>
+      <p class="dl-fine">Trusted source: WCH (Nanjing Qinheng Microelectronics)</p>
+      <details class="dl-note">
+        <summary>Install steps &amp; Homebrew option</summary>
+        <p><b>Standard install:</b> unzip the download, open the <code>.pkg</code> (or the <code>.dmg</code> on Apple Silicon), and follow the prompts. If macOS blocks it, go to <b>System Settings &rarr; Privacy &amp; Security</b> and click <b>Allow Anyway</b>, then re-open. On macOS 11+, open <b>CH34xVCPDriver</b> from Launchpad and click <b>Install</b>. Restart if asked.</p>
+        <p><b>Homebrew (advanced):</b></p>
+        <pre><code>brew install --cask wch-ch34x-usb-serial-driver</code></pre>
+        <p>After installing, the machine appears as <code>cu.usbserial-130</code> in Tactus.</p>
+      </details>
+    </div>
+  </div>
+
+  <div class="dl-tip">
+    <b>Keeping up to date:</b> always run the latest version. You can see your current version in the app's title bar and top-right toolbar (e.g. <span class="ver-pill">Tactus v2.15</span>). If it's older than the version shown above, download the newest installer.
+  </div>
+</section>
+
+<!-- ============ MANUAL ============ -->
+<section class="section manual" id="manual">
+  <div class="section-head center">
+    <div class="section-tag">Documentation</div>
+    <h2>Operator's Manual</h2>
+    <p class="section-lead">Everything from first setup to path programming, troubleshooting, and maintenance.</p>
+  </div>
+
+  <!-- The PDF embed. When you upload TACTUS_Operator_Manual.pdf next to this
+       page, it appears here automatically. Until then a friendly placeholder
+       shows. -->
+  <div class="manual-frame" id="manualFrame">
+    <object data="TACTUS_Operator_Manual.pdf" type="application/pdf" width="100%" height="100%">
+      <div class="manual-placeholder">
+        <div class="mp-ico">&#128196;</div>
+        <h3>Manual PDF goes here</h3>
+        <p>Upload <code>TACTUS_Operator_Manual.pdf</code> next to this page and it will embed automatically.</p>
+      </div>
+    </object>
+  </div>
+  <div class="manual-actions">
+    <!-- TODO: this link works once the PDF is uploaded beside index.html -->
+    <a href="TACTUS_Operator_Manual.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Open manual in new tab &#8599;</a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta-inner">
+    <h2>Ready to put a real finger on it?</h2>
+    <p>Download Tactus and start automating real-device touch testing today.</p>
+    <a href="#download" class="btn btn-primary btn-lg">Download for Mac</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="foot-brand">
+      <img src="assets/logo_mark.png" alt="" class="brand-mark">
+      <span class="brand-name">TACTUS</span>
+      <p>Automated Touchscreen Test Platform</p>
+    </div>
+    <div class="foot-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#how">How it works</a>
+      <a href="#download">Download</a>
+      <a href="#manual">Manual</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>&copy; <span id="year"></span> Akhil R. Pathapati</span>
+    <span>Built for precision.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
