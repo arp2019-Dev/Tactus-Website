@@ -8,7 +8,7 @@ This repository hosts the **Tactus website** — the product page, the macOS app
 download, and the operator's manual. It's served with GitHub Pages.
 
 **Live site:** https://arp2019-dev.github.io/Tactus-Website/
-*(update this if your Pages URL differs)*
+
 
 ---
 
