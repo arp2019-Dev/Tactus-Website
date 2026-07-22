@@ -208,13 +208,13 @@
   <div class="section-head center">
     <div class="section-tag light">Get Started</div>
     <h2>Download &amp; Install</h2>
-    <p class="section-lead">Two steps to get it running on your Mac.</p>
+    <p class="section-lead">Install the app and you’re ready to go.</p>
   </div>
 
   <div class="dl-cards">
     <!-- App -->
     <div class="dl-card featured">
-      <div class="dl-step">Step 1</div>
+      <div class="dl-step">Install</div>
       <h3>Install the Tactus app</h3>
       <p class="dl-ver">Latest version <span class="ver-pill" id="appVersion">v2.15</span></p>
       <p>Download the installer, open it, and drag Tactus into your Applications folder.</p>
@@ -228,12 +228,13 @@
       </details>
     </div>
 
-    <!-- Driver -->
-    <div class="dl-card">
-      <div class="dl-step">Step 2</div>
-      <h3>Install the USB serial driver</h3>
-      <p class="dl-ver">Required &middot; one time per Mac</p>
-      <p>The control board uses a <b>CH340</b> USB chip, and macOS doesn’t come with a driver for it. Install the free official one from WCH (the company that makes the chip). It works on both Apple Silicon and Intel Macs.</p>
+    <!-- Driver (only if needed) -->
+    <div class="dl-card dl-card-optional">
+      <div class="dl-step optional">Only if needed</div>
+      <h3>Machine not showing up?</h3>
+      <p class="dl-ver">Most Macs won’t need this</p>
+      <p>Open Tactus, plug in the machine, and check the port dropdown. If you see <code>cu.usbserial-130</code>, you’re all set — skip this.</p>
+      <p>If the list is empty and the machine won’t connect, your Mac is missing the driver for the board’s <b>CH340</b> USB chip. Install the free official one from WCH (the company that makes the chip), then reopen Tactus.</p>
       <a href="https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html" target="_blank" rel="noopener" class="btn btn-dark btn-block">
         &#8681;&nbsp; Official CH34x Mac Driver
       </a>
